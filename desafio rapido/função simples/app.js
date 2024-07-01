@@ -24,3 +24,17 @@ function calcularDobro(numero) {
   
   let media = calcularMedia(4, 7, 10);
   console.log(media);
+
+  function encontraMaior(a, b){
+    return a > b ? a : b;
+  }
+
+  let maiorNumero = encontraMaior(15,9);
+  console.log(maiorNumero);
+
+  function dobro(numero){
+    return numero * numero
+  }
+
+  let calculoDobro = dobro(2);
+  console.log(calculoDobro)
