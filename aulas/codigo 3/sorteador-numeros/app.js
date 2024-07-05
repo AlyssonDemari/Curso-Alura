@@ -11,9 +11,12 @@ function sortear(){
     sorteados.push(numero);
     }
 
-    alert(sorteados);
+  
+
+    alert(numero)
 }
 
 function obterNumeroAlatorio(min, max){
     return  Math.floor(Math.random() * (max - min + 1 )) + min;
-}
+}  
+exercism.io
