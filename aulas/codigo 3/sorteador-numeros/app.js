@@ -6,7 +6,11 @@ function sortear(){
     let sorteados = [];
     let numero;
 
-    for (let i = 0; i < quantidade; i++){
+    if(de > ate ){
+        alert('Você digitou um número errado')
+        document.getElementById('resultado').innerHTML = '<label class="texto__paragrafo">Digite um número maior na opção "Até o número"</label>';
+    } else {
+        for (let i = 0; i < quantidade; i++){
     numero = obterNumeroAlatorio(de, ate);
 
     while (sorteados.includes(numero)){
@@ -19,8 +23,9 @@ function sortear(){
     resultado.innerHTML = `<label class="texto__paragrafo">Os números que foram sorteados são: ${sorteados} </label>`;
 
     alterarStatusBotao();
-    
+    }
 }
+
 reiniciar();
 
 
