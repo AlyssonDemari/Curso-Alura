@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario simples </title>
+
+    <style>
+        #errado{
+            display: none;
+        }
+
+        #correto{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Formulario simples</h1>
+    <input id="batata" type="text">
+    <button onclick="nome()">eu sou um botão</button>
+    <button id="limpa" onclick="limpar()" >outro botão</button>
+    <script src="app.js"></script>
+
+    <hr>
+
+    <h1 id="euQueVouMuda">Esse texto mudará caso o botão seja apertado </h1>
+    <button id="mudarPalavra" onclick="mudei()">Esse botão </button>
+
+    <hr>
+
+    <h1>Aperte <button onclick="calcular()">aqui</button> para fazer o calculo</h1>
+    <h2 id="soma">2 + 2 = </h2>
+
+</body>
+</html>
